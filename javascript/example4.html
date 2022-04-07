@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Taste of JavaScript
+        </title>
+    </head>
+    <body>
+        <script>
+            function cat(sw) {
+                var move; 
+                if (sw == 0) {
+                    move = "cat.gif"
+                } else {
+                    move = "cat.gif"
+                }
+                document.getElementById("Cat").src = move;
+            }
+        </script>
+
+        <img id="Cat" src="cat.gif" alt="CatGIF" width="100" height="180">
+
+        <p>
+            <button type="button" onclick="cat(1)">Restart</button>
+            <!--<button type="button" onclick="cat(0)">Stop</button> -->
+        </p>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Id
+        </title>
+        <style>
+            #ID {
+                background-color: aqua;
+                color: black;
+                padding: 20x;
+                text-align: center;
+            }
+
+            .class {
+                background-color: orange;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="ID">Hello World</h2>
+
+        <h2 class="class">Good Morning</h2>
+        <h2 class="class">Good Afternoon</h2>
+        <h2 class="class">Good Night</h2>
+    </body>
+
+    <script>
+        function displayResult() {
+          document.getElementById("ID").innerHTML = "Have a nice day!";
+        }
+    </script>
+    <button onclick="displayResult()">Click Me!</button>
+</html>
