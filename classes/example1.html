@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Class Attribute
+        </title>
+        <style>
+            .template{
+                font-size: 180%;
+                color: blue;
+            }
+            .template2{
+                background-color:antiquewhite;
+                color: black;
+                padding: 15px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div>
+            <h1 class="template">
+                Sleep
+                Coffee
+                Coding
+            </h1>
+        </div>
+
+        <h1>Hello, my name is <span class="template">kuma</span></h1>
+        <p>I live at <span class="tempplate">Indonesia</span></p>
+
+        <h2 class="template2">Hello World</h2>
+
+        <h2 class="template">Sleep</h2>
+        <h2 class="template2">Coffee</h2>
+        <h2 class="template template2">Coding</h2>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementsByClassName("template template2");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+            }
+        </script>
+        <button onclick="myFunction()">Hide elements</button>
+    </body>
+</html>
