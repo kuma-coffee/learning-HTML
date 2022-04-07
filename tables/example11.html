@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Table Multiple Columns and Caption
+        </title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th {
+                text-align: center;
+            }
+            td {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width: 50%;">
+            <caption>Name Table</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+           <tr>
+               <td>FirstName</td>
+               <td>LastName</td>
+               <td>20</td>
+           </tr>
+           <tr>
+               <td>FirstName</td>
+               <td>LastName</td>
+               <td>25</td>
+           </tr>
+        </table>
+    </body>
+</html>
